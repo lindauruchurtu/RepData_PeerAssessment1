@@ -43,7 +43,7 @@ Here we have the histogram of the total number of steps taken daily, using a bin
 
 
 ```r
-ggplot(aux1, aes(x=steps)) + geom_histogram(fill = pal(2)[1],colour="white", stat="bin", binwidth=1000)  + 
+ggplot(aux1, aes(x=steps)) + geom_histogram(fill = pal(2)[1],colour="white", stat="bin", binwidth=1000) + 
   xlab("Steps") + ylab("Count")
 ```
 

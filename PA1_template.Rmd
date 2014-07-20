@@ -44,7 +44,7 @@ aux1<-aggregate(steps ~ date, data = activity_cl, sum)
 Here we have the histogram of the total number of steps taken daily, using a bin of 1000 steps. 
 
 ```{r histogram}
-ggplot(aux1, aes(x=steps)) + geom_histogram(fill = pal(2)[1],colour="white", stat="bin", binwidth=1000)  + 
+ggplot(aux1, aes(x=steps)) + geom_histogram(fill = pal(2)[1],colour="white", stat="bin", binwidth=1000) + 
   xlab("Steps") + ylab("Count")
 ```
 
